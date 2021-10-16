@@ -1,0 +1,396 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:15px;
+    height: 15px;
+}
+html::-webkit-scrollbar-track{
+    background:rgb(194, 240, 126) ;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(235, 154, 78) ;
+}
+.navbar-brand{
+    font-size: 30px;
+    color:white;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    background-color:rgb(235, 154, 78);
+    top:0;
+    left:27%;
+    
+}
+
+.navbar ul{
+    display:flex;
+    list-style: none;
+    margin:20px 0px;
+}
+.navbar ul li{
+    
+    font-family:inherit;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+    background-color:rgb(194, 240, 126);
+    font-weight: bold;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    padding:8px 25px;
+    transition: all .5s ease;
+}
+
+
+img{
+    position:absolute;
+    height: 9cm;
+    width: 6cm;
+    background-color:rgb(194, 240, 126);
+    top:5cm;
+    left:11cm;
+    border:3px solid white;
+}
+#home{
+    
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height:840px;
+   background-color:rgb(194, 240, 126);
+   background-size: 100%;
+   width:700px;
+   height: 700px;
+   margin:60px auto;
+   color:white;
+   padding:20px;
+   box-shadow: 0 19px 28px rgb(155, 155, 155);
+  /*background:rgb(140, 143, 135) ; */
+    
+}
+#home::before{
+   
+    position:absolute;
+    top:0;
+    right:0;
+    height: 100px;
+    width: 100px;
+}
+.main{
+    position: fixed;
+    size: 100%;
+    display:flex;
+    flex-direction: column;
+    border: 1px black;
+    align-items: center;
+    position:absolute;
+    top:35%;
+    right:27%;
+
+}
+.main .heading h1{
+    
+    font-family: century;
+    font-size: 40px;
+    color:white;
+   /* top:20%;
+    right: 10%;*/
+   
+}
+.main h2{
+    
+    font-size: 30px;
+    font-style: oblique;
+    color:rgb(235, 154, 78);
+}
+.main p{
+    
+    font-style: normal;
+    font-size: 25px;
+    color:black;
+}
+
+/*About section*/
+#about{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:20px;
+    background-color:white;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+   
+}
+#about::before{
+
+    top: 0;
+    right:0;
+}
+#about .heading{
+font-size: 70px;
+color:white;
+text-shadow:3px -3px 0 rgb(99, 99, 99) ;
+
+}
+.textfile{
+    width:700px;
+    height: 700px;
+    margin:60px auto;
+    color:orange;
+    padding:20px;
+    box-shadow: 0 19px 28px rgb(155, 155, 155);
+   display:center;
+   background:rgb(194, 240, 126) ;
+  /* top:30%;
+   left:10%;
+    display: flex;
+    text-align: center;*/
+
+}
+.textfile ul{
+    list-style: none;
+}
+.textfile ul li{
+    font-size: 20px;
+    font-family:sans-serif;
+    text-align: left;
+    color:black;
+
+}
+#education{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    background:white ;
+
+}
+#education .heading{
+    color: white;
+    text-shadow:3px -3px 0 rgb(99, 99, 99);
+    font-family :sans-serif;
+    font-size : 70px;
+    
+   
+}
+.center{
+    width:700px;
+    height: 700px;
+    margin:60px auto;
+    color:orange;
+    padding:20px;
+    box-shadow: 0 19px 28px rgb(155, 155, 155);
+    display:center ;
+    background:rgb(194, 240, 126);
+    /*top :30%;
+    left:10%;*/
+   
+
+}
+.center ul li{
+    font-size: 30px;
+    font-style:bold ;
+    text-align: center;
+    color:orange;
+    list-style:none;
+}
+.center ul h2{
+    color:black;
+    font-style: initial;
+    font-size: 25px;
+}
+.center h3{
+    color:black;
+    font-style: initial;
+    font-size: 25px;
+
+}
+.center h4{
+    color:black;
+    font-style: initial;
+    font-size: 25px;
+}
+.center ul p{
+    font-style: initial;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+}
+#skills{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+h1{
+    text-align: center;
+    font-style:initial;
+    font-size: 70px;
+    text-shadow:3px -3px 0 rgb(99, 99, 99) ;
+}
+h3{
+    margin:5px;
+}
+.skills{
+    width:700px;
+    margin:60px auto;
+    color:orange;
+    padding:20px;
+    box-shadow: 0 14px 28px rgb(155, 155, 155);
+   display:center;
+   top:30%;
+   left:10%;
+   background: rgb(194, 240, 126);
+
+
+}
+.skills h1{
+    font-size: 70px;
+    font-style: initial;
+    color:white ;
+}
+.skills li{
+    margin:20px 0;
+    padding:10px;
+    list-style: none;
+   
+
+}
+.skills li h3{
+    font-size: 20px;
+    font-style: oblique;
+    list-style: none;
+}
+.bar{
+    background: black;
+    display:block;
+    height:20px;
+    border:1px solid rgb(199, 133, 10);
+    border-radius: 10px;
+    border-width: 50%;
+    overflow: hidden;
+}
+.bar span{
+    height:20px;
+    float:left;
+    background: linear-gradient(135deg,rgb(236, 174, 57)0%,orange);
+}
+.html{
+    width:90%;
+    animation: html 3s;
+
+}
+.css{
+    width:70%;
+    animation: css 3s;
+}
+.javascript{
+    width:50%;
+    animation:javascript 3s;
+
+}
+.Bootstrap{
+    width:60%;
+    animation: Bootsrap 3s;
+}
+
+@keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:100%;
+    }
+}
+@keyframes css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:45%;
+    }
+}
+@keyframes Bootstrap{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+#contactme{
+
+    text-align: center;
+    
+}
+.address{
+    width:700px;
+    height: 700px;
+    margin:60px auto;
+    color:orange;
+    padding:20px;
+    box-shadow: 0 19px 28px rgb(155, 155, 155);
+    background: rgb(194, 240, 126);
+   
+}
+.address h1{
+    font-size: 70px;
+    font-style: initial;
+    color:white ;
+
+}
+.address ul li {
+    list-style:none;
+    font-style:unset ;
+    font-size:25px ;
+    color: orange;
+    text-align: left;
+    text-transform: lowercase;
+}
+.address h2{
+    color:black;
+    font-size: 25px;
+    text-align: left;
+}
+.address h3{
+    color:black;
+    text-align: left;
+    font-size: 25px;
+}
+.address h3{
+    color:black;
+    text-align: left;
+    font-size: 25px;
+}
+.address h4{
+    color:black;
+    text-align: left;
+    font-size: 25px;
+}
